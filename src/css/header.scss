@@ -1,0 +1,40 @@
+header {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  background-image: url('https://www.foodora.com/wp-content/uploads/2017/08/4000x2000_parallax_4-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+
+  h1 {
+    display: block;
+    padding-top: 45vh;
+    text-align: center;
+  }
+
+  .country-box {
+    width: 100%;
+    background: rgba(10, 10, 10, .4);
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .flags-container {
+
+      a {
+        float: left;
+
+        img {
+          border-radius: 15%;
+          height: 40px;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}

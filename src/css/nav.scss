@@ -1,0 +1,27 @@
+nav {
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+  background: white;
+  top: 0;
+  padding: 8px 0;
+  height: 64px;
+
+  .container {
+    margin: auto;
+    padding: 0 15px;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left {
+
+      .nav-logo {
+        height: 30px;
+        width: 244px;
+      }
+    }
+  }
+}
