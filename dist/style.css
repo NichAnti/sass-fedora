@@ -30,24 +30,57 @@ nav .container .left .nav-logo {
   width: 244px;
 }
 
+#bg1 {
+  background-image: url("https://www.foodora.com/wp-content/uploads/2017/08/4000x2000_parallax_4-1.jpg");
+}
+
+#bg2 {
+  background-image: url("https://www.foodora.com/wp-content/uploads/2015/07/4000x2000_parallax_5.jpg");
+}
+
 header {
-  width: 100%;
+  overflow-x: hidden;
+  width: 100vw;
   position: relative;
   height: 100vh;
-  background-image: url("https://www.foodora.com/wp-content/uploads/2017/08/4000x2000_parallax_4-1.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   color: white;
 }
 
-header h1 {
+header .item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header .item.active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  transition: 2s ease-in-out;
+}
+
+header .item.disable {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  transition: 2s ease-in-out;
+}
+
+header .item.preactive {
+  z-index: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+header .item h1 {
   display: block;
   padding-top: 45vh;
   text-align: center;
 }
 
 header .country-box {
+  z-index: 100;
   width: 100%;
   background: rgba(10, 10, 10, 0.4);
   padding: 10px;

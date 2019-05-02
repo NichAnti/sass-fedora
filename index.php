@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="dist/style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js" charset="utf-8"></script>
     <title>foodora</title>
   </head>
   <body>
@@ -19,7 +21,12 @@
       </div>
     </nav>
     <header>
-      <h1>GOOD FOOD FOR YOUR COUNTRY</h1>
+      <div id="bg1" class="item active">
+        <h1>GOOD FOOD FOR YOUR COUNTRY</h1>
+      </div>
+      <div id="bg2" class="item disable">
+        <h1>GOOD FOOD FOR YOUR EVERYDAY</h1>
+      </div>
       <div class="country-box">
         <div>
           <small>CHOOSE YOUR COUNTRY:</small>
@@ -86,7 +93,7 @@
       </div>
     </header>
     <section>
-
+      
     </section>
     <section>
 
